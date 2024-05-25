@@ -2,9 +2,17 @@
 //
 // Execute `rustlings hint if1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 pub fn bigger(a: i32, b: i32) -> i32 {
+    if a < b {
+        b
+    }
+    else if a == b {
+        b
+    }
+    else {
+       a
+    }
+
     // Complete this function to return the bigger number!
     // If both numbers are equal, any of them can be returned.
     // Do not use:

@@ -139,12 +139,12 @@ impl Exercise {
             Mode::Clippy => {
                 let cargo_toml = format!(
                     r#"[package]
-name = "{}"
-version = "0.0.1"
-edition = "2021"
-[[bin]]
-name = "{}"
-path = "{}.rs""#,
+                    name = "{}"
+                    version = "0.0.1"
+                    edition = "2021"
+                    [[bin]]
+                    name = "{}"
+                    path = "{}.rs""#,
                     self.name, self.name, self.name
                 );
                 let cargo_toml_error_msg = if env::var("NO_EMOJI").is_ok() {
